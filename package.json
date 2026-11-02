@@ -1,0 +1,14 @@
+{
+  "name": "evacrate2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/verify.mjs",
+    "check:security": "node --test scripts/security.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
