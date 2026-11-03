@@ -88,7 +88,7 @@
   backdrop-filter: blur(8px); z-index: 5;
 }
 .product-views button {
-  background: transparent; color: #d7e2ca; font-size: 9px;
+  background: transparent; color: #d7e2ca; font-size:9px;
   padding: 8px 13px; min-height: 35px; border-radius: 24px;
   transition: color .25s, background .25s;
 }
@@ -108,8 +108,8 @@
 }
 .story-intro { display: grid; grid-template-columns: 1.4fr 1fr; gap: 0 80px; align-items: end; }
 .story-intro > .eyebrow { grid-column: 1 / -1; }
-.story-intro h2 { font-size: clamp(48px,5vw,74px); }
-.story-intro > p { max-width: 330px; font-size: 15px; margin: 0 0 5px; }
+.story-intro h2 { font-size:clamp(45.6px,4.75vw,70.3px); }
+.story-intro > p { max-width: 330px; font-size:14.25px; margin: 0 0 5px; }
 .journey-layout { display: grid; grid-template-columns: 1fr 1.15fr; column-gap: 70px; position: relative; margin-top: 40px; }
 .journey-stage {
   position: sticky; top: 105px; grid-column: 2; grid-row: 1;
@@ -126,20 +126,20 @@
   background-size: 35px 35px; mask-image: linear-gradient(transparent,#000 40%,transparent);
 }
 .journey-scene-word {
-  position: absolute; top: 9%; width: 100%; text-align: center; font-size: clamp(50px,5.4vw,83px);
+  position: absolute; top: 9%; width: 100%; text-align: center; font-size:clamp(47.5px,5.13vw,78.85px);
   line-height: 1; letter-spacing: -.07em; color: #45644925; z-index: -1;
   transition: translate .7s var(--ease), opacity .7s;
 }
 .journey-stage .crate-scene { height: calc(100% - 86px); width: 100%; }
 .journey-stage .scene-label { display: none; }
-.journey-stage .model-note { bottom: 48px; color: #173c2c; font-size: 6px; }
+.journey-stage .model-note { bottom: 48px; color: #173c2c; font-size:6px; }
 .journey-stage .scene-controls { color: #173c2c; bottom: 0; }
 .journey-stage .scene-controls button { border-color: #173c2c30; }
 .journey-stage .scene-orbit { border-color: #173c2c20; inset: 20% 8%; }
 .journey-token {
   position: absolute; top: 52%; left: 6%; right: 6%; margin: auto;
   width: max-content; max-width: 88%; display: flex; align-items: center; gap: 11px;
-  color: #173c2c; padding: 13px 18px; font-size: 11px; background: #f8faeece;
+  color: #173c2c; padding: 13px 18px; font-size:11px; background: #f8faeece;
   border: 1px solid #fff7; border-radius: 40px; backdrop-filter: blur(12px);
   box-shadow: 0 10px 40px #173c2c18; translate: 0 100px; pointer-events: none;
 }
@@ -148,29 +148,29 @@
   position: absolute; inset: auto 24px 20px; display: flex; align-items: center;
   justify-content: space-between; gap: 12px; color: #173c2c;
 }
-.journey-stage-bottom > span { font-size: 8px; letter-spacing: .08em; }
-.journey-stage-bottom b { font-size: 25px; font-weight: 400; letter-spacing: -.04em; }
-.journey-stage-bottom > span:last-child { font-size: 6px; }
+.journey-stage-bottom > span { font-size:8px; letter-spacing: .08em; }
+.journey-stage-bottom b { font-size:23.75px; font-weight: 400; letter-spacing: -.04em; }
+.journey-stage-bottom > span:last-child { font-size:6px; }
 .journey-dots { display: flex; gap: 2px; }
 .journey-dots a { display: grid; place-items: center; height: 40px; width: 27px; }
 .journey-dots a span { width: 5px; height: 5px; border-radius: 10px; background: #67826450; transition: width .4s, background .4s; }
 .journey-dots a[aria-current] span { width: 22px; background: #173c2c; }
 .journey-chapters { grid-column: 1; grid-row: 1; }
 .journey-chapter { min-height: 70svh; display: flex; align-items: start; flex-direction: column; justify-content: center; padding-block: 70px; scroll-margin-top: 130px; }
-.journey-chapter h3 { font-size: clamp(37px,4vw,60px); line-height: 1.05; }
+.journey-chapter h3 { font-size:clamp(35.15px,3.8vw,57px); line-height: 1.05; }
 .journey-chapter h3 em { color: #6c844c; }
-.journey-chapter > p { max-width: 370px; font-size: 15px; color: #53654e; margin: 25px 0; }
-.journey-chapter .text-link { font-size: 12px; }
+.journey-chapter > p { max-width: 370px; font-size:14.25px; color: #53654e; margin: 25px 0; }
+.journey-chapter .text-link { font-size:12px; }
 
 /* An original resource sculpture morphs between food, water and energy. */
 .resource-garden { background: #dce6bd; overflow: hidden; }
 .resource-garden-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
-.resource-garden h2 { font-size: clamp(47px,5.1vw,73px); }
-.resource-garden-grid > div > p { font-size: 15px; max-width: 410px; margin-top: 28px; }
+.resource-garden h2 { font-size:clamp(44.65px,4.845vw,69.35px); }
+.resource-garden-grid > div > p { font-size:14.25px; max-width: 410px; margin-top: 28px; }
 .resource-picker { display: flex; gap: 8px; margin-top: 30px; }
 .resource-picker button {
   color: var(--ink); background: transparent; border: 1px solid #173c2c40;
-  padding: 11px 22px; border-radius: 30px; font-size: 12px; min-height: 44px;
+  padding: 11px 22px; border-radius: 30px; font-size:12px; min-height: 44px;
   transition: background .3s, color .3s;
 }
 .resource-picker button[aria-selected="true"] { color: var(--cream); background: var(--forest); }
@@ -183,9 +183,9 @@
 .resource-orbit { position: absolute; height: 10px; width: 10px; border-radius: 50%; background: #d58b58; }
 .orbit-dot-a { left: 13%; top: 24%; animation: seed-drift 8s ease-in-out infinite; }
 .orbit-dot-b { right: 7%; bottom: 20%; width: 5px; height: 5px; background: #2d6e4f; animation: seed-drift 10s ease-in-out -5s infinite; }
-#resource-panel > h3 { font-size: 31px; margin-bottom: 20px; }
-#resource-panel > p { font-size: 14px; max-width: 430px; min-height: 90px; }
-#resource-panel > .eyebrow { font-size: 8px; margin-bottom: 17px; }
+#resource-panel > h3 { font-size:29.45px; margin-bottom: 20px; }
+#resource-panel > p { font-size:13.3px; max-width: 430px; min-height: 90px; }
+#resource-panel > .eyebrow { font-size:8px; margin-bottom: 17px; }
 
 /* The notebook combines real supplied CAD with original animated annotations. */
 .lab-notebook { background: #d1ddd1; }
@@ -195,20 +195,20 @@
 .notebook-visual img { mix-blend-mode: multiply; transition: transform 1.2s var(--ease), filter 1.2s, opacity 1.2s; width: 100%; }
 .notebook-visual[data-lab-view="1"] img { transform: scale(1.25) rotate(-5deg); filter: contrast(1.15) sepia(.2); }
 .notebook-visual[data-lab-view="2"] img { transform: scale(.9) rotate(3deg); opacity: .6; }
-.notebook-index { position: absolute; left: 25px; top: 22px; font-size: 8px; letter-spacing: .12em; }
-.notebook-caption { position: absolute; left: 25px; right: 25px; bottom: 22px; font-size: 8px; border-top: 1px solid #173c2c30; padding-top: 16px; }
+.notebook-index { position: absolute; left: 25px; top: 22px; font-size:8px; letter-spacing: .12em; }
+.notebook-caption { position: absolute; left: 25px; right: 25px; bottom: 22px; font-size:8px; border-top: 1px solid #173c2c30; padding-top: 16px; }
 .notebook-annotations { position: absolute; width: 100%; fill: none; stroke: #735a39; stroke-width: 1.2; opacity: 0; transition: opacity .7s; }
 .notebook-annotations path { stroke-dasharray: 180; stroke-dashoffset: 180; transition: stroke-dashoffset 1s; }
 .notebook-visual[data-lab-view="1"] .notebook-annotations { opacity: 1; }
 .notebook-visual[data-lab-view="1"] .notebook-annotations path { stroke-dashoffset: 0; }
 .notebook-copy { padding: 35px; border-left: 1px solid #173c2c25; }
 .lab-tabs { display: flex; justify-content: space-between; gap: 6px; border-bottom: 1px solid #173c2c30; margin-bottom: 50px; }
-.lab-tabs button { color: #60745a; padding: 12px 3px; border-bottom: 2px solid transparent; background: none; font-size: 9px; min-height: 44px; }
+.lab-tabs button { color: #60745a; padding: 12px 3px; border-bottom: 2px solid transparent; background: none; font-size:9px; min-height: 44px; }
 .lab-tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
-#lab-panel .eyebrow { font-size: 8px; margin-bottom: 22px; }
-#lab-panel h3 { font-size: 37px; margin-bottom: 24px; }
-#lab-panel p { font-size: 14px; min-height: 110px; }
-.notebook-stamp { display: inline-block; margin-top: 25px; border: 1px solid #6c7a4c70; padding: 8px 12px; font-size: 7px; letter-spacing: .12em; rotate: -4deg; color: #657a47; }
+#lab-panel .eyebrow { font-size:8px; margin-bottom: 22px; }
+#lab-panel h3 { font-size:35.15px; margin-bottom: 24px; }
+#lab-panel p { font-size:13.3px; min-height: 110px; }
+.notebook-stamp { display: inline-block; margin-top: 25px; border: 1px solid #6c7a4c70; padding: 8px 12px; font-size:7px; letter-spacing: .12em; rotate: -4deg; color: #657a47; }
 
 /* Purposeful microinteractions, without a replacement cursor or moving hit targets. */
 .button { position: relative; overflow: hidden; isolation: isolate; }
@@ -249,19 +249,19 @@
 /* A native horizontal filmstrip: touch, keyboard and buttons all use the same rail. */
 .chapter-reel-section { padding: 85px 0; background: #ecebdc; overflow: hidden; }
 .reel-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 40px; }
-.reel-heading h2 { font-size: clamp(46px,4.5vw,67px); }
+.reel-heading h2 { font-size:clamp(43.7px,4.275vw,63.65px); }
 .reel-controls { display: flex; align-items: center; gap: 10px; }
-.reel-controls button { width: 45px; height: 45px; border-radius: 50%; background: transparent; color: var(--ink); border: 1px solid #173c2c40; font-size: 18px; }
+.reel-controls button { width: 45px; height: 45px; border-radius: 50%; background: transparent; color: var(--ink); border: 1px solid #173c2c40; font-size:17.1px; }
 .reel-controls button:hover:not(:disabled) { background: var(--forest); color: var(--cream); }
 .reel-controls button:disabled { opacity: .3; cursor: default; }
-.reel-controls > span { font-size: 7px; letter-spacing: .1em; margin-left: 10px; }
+.reel-controls > span { font-size:7px; letter-spacing: .1em; margin-left: 10px; }
 .chapter-reel { display: flex; gap: 0; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-left: max(56px,calc((100vw - 1280px)/2)); padding: 0 max(56px,calc((100vw - 1280px)/2)) 20px; scrollbar-color: #698052 #d9dec9; scrollbar-width: thin; }
 .reel-frame { flex: 0 0 390px; height: 400px; padding: 28px; position: relative; overflow: hidden; isolation: isolate; scroll-snap-align: start; transition: filter .35s; }
 .reel-frame:hover { filter: brightness(1.04); }
-.reel-frame-top { display: flex; justify-content: space-between; align-items: center; font-size: 9px; text-transform: uppercase; letter-spacing: .1em; }
-.reel-frame-top > span:last-child { font-size: 23px; }
-.reel-frame h3 { font-size: 56px; margin-top: 42px; position: relative; z-index: 2; }
-.reel-frame-bottom { position: absolute; left: 28px; right: 28px; bottom: 25px; border-top: 1px solid #173c2c35; padding-top: 15px; display: flex; justify-content: space-between; font-size: 7px; letter-spacing: .12em; }
+.reel-frame-top { display: flex; justify-content: space-between; align-items: center; font-size:9px; text-transform: uppercase; letter-spacing: .1em; }
+.reel-frame-top > span:last-child { font-size:21.85px; }
+.reel-frame h3 { font-size:53.2px; margin-top: 42px; position: relative; z-index: 2; }
+.reel-frame-bottom { position: absolute; left: 28px; right: 28px; bottom: 25px; border-top: 1px solid #173c2c35; padding-top: 15px; display: flex; justify-content: space-between; font-size:7px; letter-spacing: .12em; }
 .reel-drawing { position: absolute; width: 190px; right: -22px; bottom: 48px; opacity: .4; rotate: 15deg; transition: rotate .6s, scale .6s; }
 .reel-frame:hover .reel-drawing { rotate: 0deg; scale: 1.1; }
 .reel-drawing .drawn-icon > * { animation: none; stroke-dashoffset: 0; }
@@ -291,28 +291,28 @@
 }
 @media (max-width: 1000px) {
   .journey-layout { gap: 35px; }
-  .journey-chapter h3 { font-size: 43px; }
+  .journey-chapter h3 { font-size:40.85px; }
   .journey-stage { height: 510px; min-height: 450px; }
-  .journey-token { font-size: 9px; top: 48%; translate: 0 110px; }
+  .journey-token { font-size:9px; top: 48%; translate: 0 110px; }
   .resource-garden-grid { gap: 50px; }
   .notebook-copy { padding: 28px; }
-  #lab-panel h3 { font-size: 30px; }
-  .lab-tabs button { font-size: 8px; }
+  #lab-panel h3 { font-size:28.5px; }
+  .lab-tabs button { font-size:8px; }
 }
 @media (max-width: 760px) {
   .chapter-reel-section { padding-block: 60px; }
   .reel-heading { flex-direction: column; align-items: start; gap: 25px; }
-  .reel-heading h2 { font-size: 44px; }
+  .reel-heading h2 { font-size:41.8px; }
   .chapter-reel { padding-inline: 20px; scroll-padding-left: 20px; }
   .reel-frame { flex-basis: 290px; height: 350px; padding: 24px; }
-  .reel-frame h3 { font-size: 48px; }
+  .reel-frame h3 { font-size:45.6px; }
   .reel-frame-bottom { left: 24px; right: 24px; }
   .reel-drawing { width: 150px; }
   .harvest-story { padding-block: 70px 25px; }
   .story-intro { grid-template-columns: 1fr; gap: 22px; }
   .story-intro > .eyebrow { margin-bottom: 0; }
-  .story-intro h2 { font-size: 47px; }
-  .story-intro > p { font-size: 14px; max-width: 400px; }
+  .story-intro h2 { font-size:44.65px; }
+  .story-intro > p { font-size:13.3px; max-width: 400px; }
   .journey-layout { display: flex; flex-direction: column; margin-top: 35px; gap: 0; }
   .journey-stage {
     top: 88px; width: 100%; height: 380px; min-height: 0; z-index: 3;
@@ -320,33 +320,33 @@
   }
   .journey-stage[data-chapter="1"] { border-radius: 12px 70px 12px 12px; }
   .journey-stage[data-chapter="2"] { border-radius: 70px 12px 12px 12px; }
-  .journey-scene-word { top: 10%; font-size: 66px; }
+  .journey-scene-word { top: 10%; font-size:62.7px; }
   .journey-stage .crate-scene { height: calc(100% - 55px); max-width: 470px; margin: auto; }
-  .journey-stage .model-note { font-size: 5px; bottom: 28px; }
+  .journey-stage .model-note { font-size:5px; bottom: 28px; }
   .journey-stage .scene-controls { bottom: 0; gap: 15px; }
   .journey-stage .scene-controls button { width: 30px; min-width: 30px; height: 30px; min-height: 30px; }
-  .journey-stage .scene-controls span { font-size: 6px; }
+  .journey-stage .scene-controls span { font-size:6px; }
   .journey-stage-bottom { inset: auto 20px 8px; }
-  .journey-stage-bottom b { font-size: 20px; }
-  .journey-token { top: 40%; translate: 0 80px; padding: 8px 13px; font-size: 8px; }
+  .journey-stage-bottom b { font-size:19px; }
+  .journey-token { top: 40%; translate: 0 80px; padding: 8px 13px; font-size:8px; }
   .journey-chapters { position: relative; z-index: 1; }
   .journey-chapter { min-height: 58svh; padding-block: 65px; scroll-margin-top: 480px; }
-  .journey-chapter h3 { font-size: 41px; }
-  .journey-chapter > p { font-size: 14px; max-width: 450px; margin-block: 22px; }
-  .journey-chapter > .eyebrow { font-size: 8px; }
-  .journey-chapter .text-link { font-size: 12px; }
+  .journey-chapter h3 { font-size:38.95px; }
+  .journey-chapter > p { font-size:13.3px; max-width: 450px; margin-block: 22px; }
+  .journey-chapter > .eyebrow { font-size:8px; }
+  .journey-chapter .text-link { font-size:12px; }
   .resource-garden-grid { grid-template-columns: 1fr; gap: 35px; }
-  .resource-garden h2 { font-size: 46px; }
-  .resource-garden-grid > div > p { font-size: 14px; }
+  .resource-garden h2 { font-size:43.7px; }
+  .resource-garden-grid > div > p { font-size:13.3px; }
   .resource-sculpture { width: 270px; height: 270px; margin-bottom: 20px; }
-  #resource-panel > p { min-height: 70px; font-size: 14px; }
+  #resource-panel > p { min-height: 70px; font-size:13.3px; }
   .notebook-spread { grid-template-columns: 1fr; }
   .notebook-visual { min-height: 330px; }
   .notebook-copy { border-left: 0; border-top: 1px solid #173c2c25; padding: 25px; }
   .lab-tabs { margin-bottom: 30px; }
-  .lab-tabs button { font-size: 10px; }
+  .lab-tabs button { font-size:10px; }
   #lab-panel p { min-height: 70px; }
-  #lab-panel h3 { font-size: 32px; }
+  #lab-panel h3 { font-size:30.4px; }
   .notebook-stamp { margin-top: 15px; }
   .hero-drawing { width: 75px; left: auto; right: -10px; bottom: 35%; opacity: .5; }
 }
@@ -354,7 +354,7 @@
   .site-header.is-scrolled { top: 8px; height: 61px; }
   .menu-open .site-header { top: 14px; }
   .product-views { top: 3px; right: 0; }
-  .product-views button { min-height: 32px; font-size: 8px; padding: 8px 12px; }
+  .product-views button { min-height: 32px; font-size:8px; padding: 8px 12px; }
   .crate-scene .label-one { top: 46px; }
   .scene-controls button { min-width: 36px; min-height: 36px; }
   .hero-drawing { bottom: 42%; }
@@ -371,4 +371,42 @@
   .drawn-icon > * { stroke-dashoffset: 0; }
   .resource-morph { transition: none; }
   .journey-stage { transition: none; }
+}
+
+/* Compact navigation panel; content behind it remains usable and scrollable. */
+body.menu-open { overflow: visible; }
+.site-menu {
+  inset: 108px 28px auto auto;
+  width: min(600px,calc(100% - 56px));
+  max-height: min(560px,calc(100dvh - 132px));
+  padding: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid #173c2c25;
+  border-radius: 12px;
+  box-shadow: 0 16px 50px #082b2233;
+}
+.menu-inner { width: auto; margin: 0; padding: 22px; }
+.menu-inner > .eyebrow { margin-bottom: 12px; font-size: 9px; }
+.menu-inner > nav { grid-template-columns: 1fr 1fr; gap: 5px 16px; }
+.menu-inner nav a {
+  padding: 10px 9px; min-height: 44px; gap: 9px;
+  border: 0; border-radius: 5px;
+  font-size: 15px; line-height: 1.3; letter-spacing: -.015em;
+}
+.menu-inner nav a:hover,.menu-inner nav a[aria-current] { background: #e5ecd7; color: var(--forest); }
+.menu-inner nav small { font-size: 9px; }
+.menu-inner nav a > span { font-size: 16px; }
+.menu-bottom { border-top: 1px solid var(--line); margin-top: 14px; padding-top: 14px; font-size: 10px; }
+.site-menu:not([hidden]) { animation: dropdown-arrive .2s var(--ease) both; }
+.site-menu:not([hidden]) nav a { animation: none; }
+@keyframes dropdown-arrive { from { opacity: 0; translate: 0 -6px; } to { opacity: 1; translate: 0 0; } }
+@media(min-width:1400px) { .site-menu { right: max(28px,calc((100% - 1320px)/2)); } }
+@media(max-width:640px) {
+  .site-menu { top: 90px; right: 14px; width: calc(100% - 28px); max-height: min(500px,calc(100dvh - 112px)); }
+  .menu-inner { padding: 16px; }
+  .menu-inner > nav { column-gap: 8px; }
+  .menu-inner nav a { font-size: 13px; padding: 9px 5px; gap: 6px; }
+  .menu-inner nav small { font-size: 8px; }
+  .menu-bottom { font-size: 9px; }
 }

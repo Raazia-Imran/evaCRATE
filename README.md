@@ -87,3 +87,23 @@ The EvaCRATE logo and CAD were provided by the project owner. URW Base35 fonts a
 - [Motion accessibility guidance](https://motion.dev/docs/react-accessibility)
 
 There is no database, user account system, cookie advertising or analytics integration in this build. Add services only when their product purpose and privacy requirements are agreed.
+
+## Cloudflare Pages deployment
+
+The static build works with Cloudflare Pages; no Worker, database or paid runtime is required.
+
+| Setting | Value |
+| --- | --- |
+| GitHub repository | `Raazia-Imran/evaCrate2` |
+| Production branch | `main` |
+| Framework preset | None |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | Repository root |
+| Node version | 22 or later |
+
+Set `SITE_URL` in the Cloudflare build environment to the final production origin (your actual `https://<project>.pages.dev` address or custom domain), with no path or trailing page name. Redeploy after setting it so canonical links, sitemap and share images use that address. Keep the generated `dist/_headers`; it contains the security headers. The custom `404.html` preserves ordinary missing-page handling.
+
+`CONTACT_EMAIL` and `WEB3FORMS_ACCESS_KEY` are optional until enquiry delivery is activated. The current copy-enquiry mode continues to work without them. The original Version 1 repository is maintained separately.
+
+Official references: https://developers.cloudflare.com/pages/configuration/build-configuration/ and https://developers.cloudflare.com/pages/platform/limits/

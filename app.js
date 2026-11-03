@@ -24,22 +24,26 @@ if(splash){
   else{setTimeout(dismiss,1700);$('.splash-skip',splash).addEventListener('click',dismiss);document.addEventListener('keydown',e=>{if(e.key==='Escape')dismiss();},{once:true});}
 }
 
-// Accessible menu with focus containment, Escape and outside-route navigation.
+// Compact, nonmodal navigation: page scrolling and ordinary Tab order stay available.
 const toggle=$('.menu-toggle'),menu=$('#site-menu');
-let lastFocus;
-function closeMenu(){menu.hidden=true;document.body.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');$('main').inert=false;$('.site-footer').inert=false;lastFocus?.focus();}
+function closeMenu(restoreFocus=true){
+  menu.hidden=true;document.body.classList.remove('menu-open');
+  toggle.setAttribute('aria-expanded','false');
+  if(restoreFocus)toggle.focus();
+}
 toggle.addEventListener('click',()=>{
   if(!menu.hidden){closeMenu();return;}
-  lastFocus=document.activeElement;menu.hidden=false;document.body.classList.add('menu-open');toggle.setAttribute('aria-expanded','true');$('main').inert=true;$('.site-footer').inert=true;$('nav a',menu).focus();
+  menu.hidden=false;document.body.classList.add('menu-open');
+  toggle.setAttribute('aria-expanded','true');$('nav a',menu).focus();
 });
 document.addEventListener('keydown',e=>{
-  if(menu.hidden)return;
-  if(e.key==='Escape'){closeMenu();return;}
-  if(e.key==='Tab'){
-    const items=[toggle,...$$('a',menu)];const first=items[0],last=items.at(-1);
-    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
-    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
-  }
+  if(!menu.hidden&&e.key==='Escape'){e.preventDefault();closeMenu();}
+});
+document.addEventListener('pointerdown',e=>{
+  if(!menu.hidden&&!menu.contains(e.target)&&!toggle.contains(e.target))closeMenu(false);
+});
+menu.addEventListener('focusout',()=>{
+  setTimeout(()=>{if(!menu.hidden&&!menu.contains(document.activeElement)&&document.activeElement!==toggle)closeMenu(false);},0);
 });
 
 const reveals=$$('.reveal');
